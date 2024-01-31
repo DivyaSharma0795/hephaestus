@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
         <title> {{ config.title }} </title>
@@ -26,8 +25,10 @@
       right: 125%;
     }
     </style>
+	<script src="https://kit.fontawesome.com/1b4a5a34cc.js" crossorigin="anonymous">
+	</script>
 	</head>
-
+	
 	<body>
 
 		<section class="section">
@@ -46,6 +47,7 @@
 				</nav>
 				{% block content %} {% endblock %}
 		<footer class="footer">
+			
 			<div class="content has-text-centered">
 				<div class="columns is-centered is-vcentered">
 					{% for index in config.extra.social %}

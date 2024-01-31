@@ -7,6 +7,9 @@
 			<h1 class="title">
 				{{ section.title }}
 			</h1>
+			<h2 class="subtitle">
+				{{ section.extra.author }}
+			</h2>
 		</div>
 	</div>
 </section>
@@ -14,7 +17,7 @@
 
 <div class="columns">
 	<div class="column is-centered has-text-centered">
-		<h1 class="subtitle is-size-3"> Academic Projects <h1>
+		<h1 class="subtitle is-size-3"> Work Experience <h1>
 	</div>
 </div>
 
@@ -28,8 +31,9 @@
 					<br>
 					<div class="columns is-centered is-vcentered has-text-centered">
 						<figure class="image is-64x64">
-
-              {% if index.extra.emoji is defined %}
+              {% if index.extra.image is defined %}
+                <img src="{{index.extra.image}}" alt="project logo">
+              {% elif index.extra.emoji is defined %}
                 <p style="font-size:{{index.extra.emoji_size}}px">{{index.extra.emoji}}</p>
               {% endif %}
 						</figure>
